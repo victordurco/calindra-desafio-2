@@ -13,7 +13,6 @@ export default function Footer() {
                 <Title>Contact</Title>
                 <Address>2490 Leisure Lane San Luis Obispo California</Address>
             </DetailContainer>
-
         </Container>
     );
 }
@@ -22,9 +21,6 @@ const Container = styled.div`
     width: 100%;
     height: 226px;
     background-color: #E9E9E9;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     padding: 47px 0 0 151px;
     display: flex;
     flex-direction: row;
@@ -56,5 +52,5 @@ const Address = styled.span`
     color: #716565;
     font-size: 16px;
     line-height: 18px;
-
 `;
+
