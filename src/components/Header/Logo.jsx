@@ -19,6 +19,7 @@ const Container = styled.div`
     height: fit-content;
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 `;
 
 const LogoImg = styled.img`
