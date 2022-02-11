@@ -1,9 +1,12 @@
+import Home from './pages/Home';
+import GlobalStyle from './styles/GlobalStyle';
 
 function App() {
   return (
-    <div>
-      oi
-    </div>
+    <>
+        <GlobalStyle />
+        < Home />
+    </>
   );
 }
 
