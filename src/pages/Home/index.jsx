@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 import FirstImg from '../../assets/first-section-img.png';
+import SecondImg from '../../assets/second-section-img.png';
 
 export default function Home() {
    return (
@@ -13,6 +14,9 @@ export default function Home() {
             <FirstTitle>Measuring everything</FirstTitle>
             <FirstSectionImg src={FirstImg} />
         </FirstSection>
+        <SecondSection>
+            <SecondSectionImg src={SecondImg} />
+        </ SecondSection>
         <Footer />
     </>
    ); 
@@ -41,4 +45,24 @@ const FirstTitle = styled.span`
     color: #716565;
     font-weight: bold;
     margin-right: 27px;
+`;
+
+const SecondSection = styled.section`
+    width: 100%;
+    height: 1024px;
+    background-color: #506FA9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+`;
+
+const SecondSectionImg = styled.img`
+    width: 1038px;
+    height: 689px;
+    position: absolute;
+    top: 83px;
+    right: 0;
 `;
