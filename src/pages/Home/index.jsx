@@ -15,6 +15,8 @@ export default function Home() {
             <FirstSectionImg src={FirstImg} />
         </FirstSection>
         <SecondSection>
+            <SecondTitle>We are Leader in Measure Tapes</SecondTitle>
+            <SecondSectionSubtitle>There are 5x the circumference of planet earth in metric tapes.</SecondSectionSubtitle>
             <SecondSectionImg src={SecondImg} />
         </ SecondSection>
         <Footer />
@@ -57,6 +59,32 @@ const SecondSection = styled.section`
     position: relative;
     top: 0;
     left: 0;
+`;
+
+const SecondTitle = styled.span`
+    width: 484px;
+    height: 162px;
+    font-size: 69px;
+    line-height: 81px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 159px;
+    top: 449px;
+    z-index: 1;
+`;
+
+const SecondSectionSubtitle = styled.span`
+    width: 493px;
+    height: 171px;
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: lighter;
+    color: white;
+    position: absolute;
+    left: 159px;
+    top: 637px;
+    z-index: 1;
 `;
 
 const SecondSectionImg = styled.img`
