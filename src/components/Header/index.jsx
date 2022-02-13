@@ -1,9 +1,15 @@
 import styled from 'styled-components';
+import { BsThreeDotsVertical } from 'react-icons/bs';
+import { IconContext } from "react-icons";
+
 import Logo from './Logo';
 
 export default function Header() {
     return(
         <Container>
+            <IconContext.Provider value={{ color: "#E2E0B8", className: "global-class-name" }}>
+                <ThreeDots />
+            </IconContext.Provider>
             <ContentContainer>
                 <Logo />
                 <NavButtons>
@@ -26,6 +32,10 @@ const Container = styled.header`
 
     @media (max-width: 1000px){
         height: 57px;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 0 22px;
     }
 `;
 
@@ -63,3 +73,13 @@ const LinkButton = styled.button`
     letter-spacing: 5px;
 `;
 
+const ThreeDots = styled(BsThreeDotsVertical)`
+    height: 26px;
+    width: 26px;
+    display: none;
+
+    @media (max-width: 1000px){
+        display:  block;
+        margin: auto 0;
+    }
+`;
