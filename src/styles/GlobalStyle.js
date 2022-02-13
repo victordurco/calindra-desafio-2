@@ -33,9 +33,8 @@ const GlobalStyle = createGlobalStyle`
     }
     
     body {
-    background-image: linear-gradient(to right, #2C5239, #57A187);
     line-height: 1;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
       ::-webkit-scrollbar {
         width: 5px;               
         }
@@ -67,11 +66,11 @@ const GlobalStyle = createGlobalStyle`
     }
     *{
         box-sizing: border-box;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
     }
     button{
         border: none;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
     }
     strong { font-weight: bold}
     a, :link{
