@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import LogoPng from '../../assets/logo.png';
 
 export default function Logo() {
