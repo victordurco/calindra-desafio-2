@@ -33,12 +33,23 @@ const FirstSection = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+
+
+    @media (max-width: 1000px) {
+        height: 511px;
+        flex-direction: column;
+    }
 `;
 
 const FirstSectionImg = styled.img`
     width: 682px;
     height: 335px;
     background-color: inherit;
+
+    @media (max-width: 1000px) {
+        width: 285px;
+        height: 140px;
+    }
 `;
 
 const FirstTitle = styled.span`
@@ -49,6 +60,14 @@ const FirstTitle = styled.span`
     color: #716565;
     font-weight: bold;
     margin-right: 27px;
+
+    @media (max-width: 1000px) {
+        width: 226px;
+        height: 124px;
+        font-size: 53px;
+        line-height: 62px;
+    }
+
 `;
 
 const SecondSection = styled.section`
