@@ -33,12 +33,23 @@ const FirstSection = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+
+
+    @media (max-width: 1000px) {
+        height: 511px;
+        flex-direction: column;
+    }
 `;
 
 const FirstSectionImg = styled.img`
     width: 682px;
     height: 335px;
     background-color: inherit;
+
+    @media (max-width: 1000px) {
+        width: 285px;
+        height: 140px;
+    }
 `;
 
 const FirstTitle = styled.span`
@@ -49,6 +60,14 @@ const FirstTitle = styled.span`
     color: #716565;
     font-weight: bold;
     margin-right: 27px;
+
+    @media (max-width: 1000px) {
+        width: 226px;
+        height: 124px;
+        font-size: 53px;
+        line-height: 62px;
+    }
+
 `;
 
 const SecondSection = styled.section`
@@ -58,6 +77,10 @@ const SecondSection = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 1000px) {
+        height: 568px;
+    }
 `;
 
 const ContentContainer = styled.div`
@@ -67,6 +90,14 @@ const ContentContainer = styled.div`
     position: relative;
     top: 0;
     left: 0;
+
+    @media (max-width: 1000px) {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 14px;
+    }
 `;
 
 const SecondTitle = styled.span`
@@ -80,6 +111,17 @@ const SecondTitle = styled.span`
     left: 159px;
     top: 449px;
     z-index: 1;
+
+    @media (max-width: 1000px) {
+        width: 288px;
+        height: 96px;
+        font-size: 41px;
+        line-height: 48px;
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-bottom: 22px;
+    }
 `;
 
 const SecondSectionSubtitle = styled.span`
@@ -93,6 +135,17 @@ const SecondSectionSubtitle = styled.span`
     left: 159px;
     top: 637px;
     z-index: 1;
+
+    @media (max-width: 1000px) {
+        width: 293px;
+        height: 90px;
+        font-size: 26px;
+        line-height: 30px;
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-bottom: 32px;
+    }
 `;
 
 const SecondSectionImg = styled.img`
@@ -101,4 +154,13 @@ const SecondSectionImg = styled.img`
     position: absolute;
     top: 83px;
     right: 0;
+
+    @media (max-width: 1000px) {
+        width: 259px;
+        height: 172px;
+        position: relative;
+        right: 0;
+        top: 0;
+        margin: 0 0 0 auto;
+    }
 `;
