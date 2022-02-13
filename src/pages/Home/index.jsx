@@ -15,9 +15,11 @@ export default function Home() {
             <FirstSectionImg src={FirstImg} />
         </FirstSection>
         <SecondSection>
-            <SecondTitle>We are Leader in Measure Tapes</SecondTitle>
-            <SecondSectionSubtitle>There are 5x the circumference of planet earth in metric tapes.</SecondSectionSubtitle>
-            <SecondSectionImg src={SecondImg} />
+            <ContentContainer>
+                <SecondTitle>We are Leader in Measure Tapes</SecondTitle>
+                <SecondSectionSubtitle>There are 5x the circumference of planet earth in metric tapes.</SecondSectionSubtitle>
+                <SecondSectionImg src={SecondImg} />
+            </ContentContainer>
         </ SecondSection>
         <Footer />
     </>
@@ -56,6 +58,12 @@ const SecondSection = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+`;
+
+const ContentContainer = styled.div`
+    width: 100%;
+    max-width: 1440px;
+    height: 1024px;
     position: relative;
     top: 0;
     left: 0;

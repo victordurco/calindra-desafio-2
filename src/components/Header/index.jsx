@@ -4,12 +4,14 @@ import Logo from './Logo';
 export default function Header() {
     return(
         <Container>
-            <Logo />
-            <NavButtons>
-                <LinkButton>ABOUT US</LinkButton>
-                <LinkButton>MODELS</LinkButton>
-                <LinkButton>GUARANTEE</LinkButton>
-            </NavButtons>
+            <ContentContainer>
+                <Logo />
+                <NavButtons>
+                    <LinkButton>ABOUT US</LinkButton>
+                    <LinkButton>MODELS</LinkButton>
+                    <LinkButton>GUARANTEE</LinkButton>
+                </NavButtons>
+            </ContentContainer>
         </Container>
     );
 }
@@ -19,6 +21,14 @@ const Container = styled.header`
     height: 110px;
     background-color: white;
     padding: 0 64px 0 53px;
+    display: flex;
+    justify-content: center;
+`;
+
+const ContentContainer = styled.div`
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
