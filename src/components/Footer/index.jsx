@@ -25,6 +25,11 @@ const Container = styled.div`
     background-color: #E9E9E9;
     display: flex;
     justify-content: center;
+
+    @media (max-width: 1000px){
+        height: 334px;
+    }
+
 `;
 
 const ContentContainer = styled.div`
@@ -34,12 +39,23 @@ const ContentContainer = styled.div`
     padding: 47px 0 0 151px;
     display: flex;
     flex-direction: row;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 39px 0 0 0;
+    }
 `;
 
 const Content = styled.div`
+    width: fit-content;
     display: flex;
     flex-direction: column;
     margin-right: 259px;
+
+    @media (max-width: 1000px) {
+        margin: 0 0 40px 0;
+    }
 `;
 
 const Title = styled.span`
@@ -48,6 +64,10 @@ const Title = styled.span`
     color: #716565;
     font-weight: bold;
     margin-bottom: 15px;
+
+    @media (max-width: 1000px) {
+        text-align: center;
+    }
 `;
 
 const SocialLinks = styled.img`
