@@ -23,6 +23,10 @@ const Container = styled.header`
     padding: 0 64px 0 53px;
     display: flex;
     justify-content: center;
+
+    @media (max-width: 1000px){
+        height: 57px;
+    }
 `;
 
 const ContentContainer = styled.div`
@@ -32,6 +36,10 @@ const ContentContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 1000px){
+        justify-content: center;
+    }
 `;
 
 const NavButtons = styled.nav`
@@ -39,6 +47,10 @@ const NavButtons = styled.nav`
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+
+    @media (max-width: 1000px){
+        display: none;
+    }
 `;
 
 const LinkButton = styled.button`

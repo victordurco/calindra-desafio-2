@@ -26,12 +26,21 @@ const LogoImg = styled.img`
     width: 71px;
     height: 70px;
     margin-right: 24px;
+
+    @media (max-width: 1000px){
+        width: 40px;
+        height: 39px;
+    }
 `;
 
 const LogoName = styled.div`
     display: flex;
     flex-direction: column;
     color: #846219;
+
+    @media (max-width: 1000px){
+        display: none;
+    }
 `;
 
 const LogoTitle = styled.span`
